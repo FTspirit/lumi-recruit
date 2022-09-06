@@ -1,10 +1,14 @@
 import Navbar from "./Component/Heading";
-import UncontrolledExample from "./Component/Carousel";
+import ImageSlider from "./Component/Carousel";
+import Youtubevid from "./Component/Youtubevid";
+import Footer from "./Component/Footer";
 function App() {
   return (
     <div>
       <Navbar />
-      <UncontrolledExample />
+      <ImageSlider />
+      <Youtubevid />
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,10 @@
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  height: 5rem;
-  width: 5rem;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.carousel-indicators {
+  > button {
+    background-color: #028b51 !important;
+  }
 }
