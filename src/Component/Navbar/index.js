@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import logolumi from "../../Asset/image/logolumi.jpg";
 import styled from "styled-components";
-import { useState } from "react";
+import { Link } from "react-router-dom";
 // --- 01 TYPOGRAPHY SYSTEM
 
 // - Font sizes (px)
@@ -12,7 +12,6 @@ import { useState } from "react";
 // 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 // Primary color: #028b51
 const StyledContainer = styled(Container)`
-  position: sticky;
   top: 0rem;
   right: 0rem;
   left: 0rem;
@@ -20,6 +19,7 @@ const StyledContainer = styled(Container)`
 const StyleRow = styled(Row)``;
 const Styledlogo = styled.img`
   width: 18rem;
+  cursor: pointer;
 `;
 const Stylelists = styled.ul`
   display: flex;
@@ -27,22 +27,35 @@ const Stylelists = styled.ul`
   justify-content: center;
   padding-left: 0rem;
   margin-bottom: 0rem;
-
   list-style: none;
 `;
 const StyleListItem = styled.li`
   font-size: 2rem;
+  line-height: 6rem;
   a {
     text-decoration: none;
     color: #333;
-    &:hover {
-      color: #028b51;
-    }
   }
   cursor: pointer;
+  &:after {
+    display: block;
+    content: "";
+    border-bottom: solid 3px #028b51;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+  &:hover:after {
+    transform: scaleX(1);
+    border-radius: 2rem;
+  }
+  &.fromRight:after {
+    transform-origin: 100% 50%;
+  }
+  &.fromLeft:after {
+    transform-origin: 0% 50%;
+  }
 `;
 function Navbar() {
-  const [fix, setFix] = useState(false);
   const setFixed = (event) => {};
   window.addEventListener("scroll", setFixed);
   return (
@@ -54,16 +67,16 @@ function Navbar() {
         <Col lg={8}>
           <Stylelists>
             <StyleListItem>
-              <a href="/">Trang chủ</a>
+              <Link to="/"> Trang chủ </Link>
             </StyleListItem>
             <StyleListItem>
-              <a href="/">Tuyển dụng</a>
+              <Link to="/tuyendung"> Tuyển dụng </Link>
             </StyleListItem>
             <StyleListItem>
-              <a href="/">Đời sống LUMIER</a>
+              <Link to="/doisong"> Đời sống LUMIER </Link>
             </StyleListItem>
             <StyleListItem>
-              <a href="/">Blog</a>
+              <Link to="/blog"> Blog </Link>
             </StyleListItem>
           </Stylelists>
         </Col>

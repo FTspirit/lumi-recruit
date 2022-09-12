@@ -1,16 +1,24 @@
-import Navbar from "./Component/Heading";
-import ImageSlider from "./Component/Carousel";
-import Youtubevid from "./Component/Youtubevid";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Trangchu from "./Pages/trangchu";
+import Tuyendung from "./Pages/tuyendung";
+import Doisong from "./Pages/doisong";
+import Blog from "./Pages/blog";
+import ErrorPage from "./Pages/errorPage";
+import Navbar from "./Component/Navbar";
 import Footer from "./Component/Footer";
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <ImageSlider />
-      <Youtubevid />
+      <Routes>
+        <Route path="/" element={<Trangchu />} />
+        <Route path="/tuyendung" element={<Tuyendung />} />
+        <Route path="/doisong" element={<Doisong />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 }
-
 export default App;

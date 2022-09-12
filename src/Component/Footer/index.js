@@ -32,7 +32,7 @@ const StyledIcons = styled(Col)`
 `;
 function Footer() {
   return (
-    <Container>
+    <Container fluid>
       <Row>
         <StyledLogo>
           <Styledlogo src={logolumi} alt="logo-lumi" />
