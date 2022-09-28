@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/lumi-recruit/static/css/main.6ec44e01.css",
-    "main.js": "/lumi-recruit/static/js/main.38f76c41.js",
-    "static/js/787.da0c0604.chunk.js": "/lumi-recruit/static/js/787.da0c0604.chunk.js",
-    "static/media/logolumi.jpg": "/lumi-recruit/static/media/logolumi.7dbd3615d10d127310fb.jpg",
-    "index.html": "/lumi-recruit/index.html",
-    "main.6ec44e01.css.map": "/lumi-recruit/static/css/main.6ec44e01.css.map",
-    "main.38f76c41.js.map": "/lumi-recruit/static/js/main.38f76c41.js.map",
-    "787.da0c0604.chunk.js.map": "/lumi-recruit/static/js/787.da0c0604.chunk.js.map"
+    "main.css": "/static/css/main.6ec44e01.css",
+    "main.js": "/static/js/main.b2af3708.js",
+    "static/js/787.da0c0604.chunk.js": "/static/js/787.da0c0604.chunk.js",
+    "static/media/logolumi.jpg": "/static/media/logolumi.7dbd3615d10d127310fb.jpg",
+    "index.html": "/index.html",
+    "main.6ec44e01.css.map": "/static/css/main.6ec44e01.css.map",
+    "main.b2af3708.js.map": "/static/js/main.b2af3708.js.map",
+    "787.da0c0604.chunk.js.map": "/static/js/787.da0c0604.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6ec44e01.css",
-    "static/js/main.38f76c41.js"
+    "static/js/main.b2af3708.js"
   ]
 }
