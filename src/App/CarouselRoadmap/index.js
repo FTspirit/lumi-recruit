@@ -23,14 +23,11 @@ export default function CarouselRoadmap() {
         navigation={false}
         modules={[Navigation, Autoplay, FreeMode]}
         loop={true}
-        // autoplay={{ delay: 1000 }}
         autoplay={{ delay: 100 }}
         speed={3500}
         pauseOnMouseEnter={true}
         disableOnInteraction
         freeMode={{ enabled: true, sticky: true }}
-        // allowTouchMove={false}
-        // allowSlideNext={false}
         className="mySwiper"
         slidesPerView={3}
         spaceBetween={30}
