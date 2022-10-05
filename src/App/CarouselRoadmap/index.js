@@ -5,23 +5,35 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
 
 import "./CarouselRoadmap.scss";
 // import required modules
 import { Navigation } from "swiper";
-
-export default function App() {
+import { Autoplay } from "swiper";
+import { FreeMode } from "swiper";
+export default function CarouselRoadmap() {
   return (
-    <>
+    <div className="CarouselRoadmapContainer">
+      <div className="CarouselHeading">
+        <p className="CarouselDescription">Hành trình phát triển</p>
+      </div>
       <Swiper
-        navigation={true}
-        modules={[Navigation]}
+        effect="slide"
+        navigation={false}
+        modules={[Navigation, Autoplay, FreeMode]}
+        loop={true}
+        // autoplay={{ delay: 1000 }}
+        autoplay={{ delay: 100 }}
+        speed={3500}
+        pauseOnMouseEnter={true}
+        disableOnInteraction
+        freeMode={{ enabled: true, sticky: true }}
+        // allowTouchMove={false}
+        // allowSlideNext={false}
         className="mySwiper"
         slidesPerView={3}
         spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
       >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
@@ -33,6 +45,6 @@ export default function App() {
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
