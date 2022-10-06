@@ -1,5 +1,9 @@
-import CarouselRoadmap from "../App/CarouselRoadmap";
+import CarouselImages from "../App/CarouselImages";
 function Home() {
-  return <CarouselRoadmap />;
+  return (
+    <>
+      <CarouselImages />
+    </>
+  );
 }
 export default Home;

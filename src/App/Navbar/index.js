@@ -7,7 +7,13 @@ import LogoLumi from "../../Asset/image/logoLumi.png";
 import "./Navbar.scss";
 function Navigation() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" className="navbar">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      bg="transparent"
+      className="navbar"
+      fixed="top"
+    >
       <Container fluid className="navbarContainter">
         <Navbar.Brand className="navbarLogo">
           <Link to="/" className="navbar__brand">
