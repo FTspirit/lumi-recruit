@@ -1,6 +1,7 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import "./CarouselImages.scss";
+import CarouselRoadmap from "../CarouselRoadmap";
 // const anchors = ["firstPage", "secondPage", "thirdPage"];
 
 const CarouselImages = () => (
@@ -21,6 +22,9 @@ const CarouselImages = () => (
           <div className="section images1"></div>
           <div className="section images2"></div>
           <div className="section images3"></div>
+          <div className="section">
+            <CarouselRoadmap />
+          </div>
         </div>
       );
     }}

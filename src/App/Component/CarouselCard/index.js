@@ -1,12 +1,22 @@
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import "./CarouselCard.scss";
 function CarouselCard({ title, description, image, imageAlt }) {
   return (
-    <div className="carousel-card">
-      <img src={image} alt={imageAlt} />
-      <div className="carousel-card__content">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </div>
+    <Card>
+      <Card.Img
+        variant="top"
+        src={image}
+        alt={imageAlt}
+        className="CarouselCard-Image"
+      />
+      <Card.Body>
+        <Card.Title className="CarouselCard-Title">{title}</Card.Title>
+        <Card.Text className="CarouselCard-Description">
+          {description}
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 }
 export default CarouselCard;

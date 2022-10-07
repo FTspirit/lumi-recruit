@@ -2,17 +2,30 @@ import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Images
+import test from "../../Asset/image/11.png";
+
+// Import CarouselCard
+import CarouselCard from "../Component/CarouselCard";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
+import "swiper/css/pagination";
 
 import "./CarouselRoadmap.scss";
 // import required modules
 import { Navigation } from "swiper";
 import { Autoplay } from "swiper";
 import { FreeMode } from "swiper";
-export default function CarouselRoadmap() {
+import { Pagination } from "swiper";
+function CarouselRoadmap() {
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  };
   return (
     <div className="CarouselRoadmapContainer">
       <div className="CarouselHeading">
@@ -20,28 +33,274 @@ export default function CarouselRoadmap() {
       </div>
       <Swiper
         effect="slide"
-        navigation={false}
-        modules={[Navigation, Autoplay, FreeMode]}
+        navigation={true}
+        modules={[Navigation, Autoplay, FreeMode, Pagination]}
         loop={true}
-        autoplay={{ delay: 100 }}
-        speed={3500}
+        pagination={pagination}
+        // autoplay={{ delay: 300 }}
+        speed={1000}
         pauseOnMouseEnter={true}
-        disableOnInteraction
-        freeMode={{ enabled: true, sticky: true }}
+        touchReleaseOnEdges={true}
+        // disableOnInteraction
+        // freeMode={{ enabled: true, sticky: true }}
         className="mySwiper"
-        slidesPerView={3}
+        slidesPerView={4}
         spaceBetween={30}
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
       </Swiper>
     </div>
   );
 }
+export default CarouselRoadmap;
