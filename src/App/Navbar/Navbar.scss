@@ -1,6 +1,7 @@
 .navbar {
   padding-top: 0rem !important;
   padding-bottom: 0rem !important;
+  // backdrop-filter: blur(10px);
 }
 @media only screen and (min-width: 992px) {
   .navbarContainter {
@@ -54,7 +55,7 @@
   font-size: 1.4rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff !important;
+  color: #333 !important;
   font-weight: 700;
   line-height: 2rem;
 }

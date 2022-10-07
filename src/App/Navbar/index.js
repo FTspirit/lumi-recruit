@@ -31,21 +31,21 @@ function Navigation() {
             <Nav className="justify-content-center">
               <Nav.Link
                 as={Link}
-                to="/"
-                className="navbar__link"
-                key="Home"
-                eventKey="Home"
-              >
-                Trang chủ
-              </Nav.Link>
-              <Nav.Link
-                as={Link}
                 to="/tuyendung"
                 className="navbar__link"
                 key="Recruit"
                 eventKey="Recruit"
               >
                 Tuyển dụng
+              </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="/thuctapsinh"
+                className="navbar__link"
+                key="Intern"
+                eventKey="Intern"
+              >
+                Thực tập sinh
               </Nav.Link>
               <Nav.Link
                 as={Link}
