@@ -20,7 +20,20 @@ const CarouselImages = () => (
       return (
         <div>
           <div className="section images1"></div>
-          <div className="section images2"></div>
+          <div className="section images2">
+            <div className="CarouselHeading">
+              <p className="CarouselDescription">Hành trình phát triển</p>
+            </div>
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/h7MYJghRWt0"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
           <div className="section images3"></div>
           <div className="section">
             <CarouselRoadmap />
