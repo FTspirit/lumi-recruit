@@ -1,4 +1,4 @@
-import CarouselImages from "../App/CarouselImages";
+import CarouselImages from "../App/Carousel";
 function Home() {
   return (
     <>

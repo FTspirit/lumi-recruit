@@ -10,6 +10,7 @@ import Intern from "./Pages/intern";
 import ErrorPage from "./Pages/errorPage";
 import LumiLife from "./Pages/lumilife";
 import Blog from "./Pages/blog";
+import Footer from "./App/Footer";
 function App() {
   return (
     <>
@@ -31,6 +32,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
