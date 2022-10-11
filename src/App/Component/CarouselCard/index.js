@@ -3,7 +3,7 @@ import "./CarouselCard.scss";
 function CarouselCard({ title, description, image, imageAlt }) {
   return (
     <Card className="CarouselCard-Container">
-      <Card.Title className="CarouselCard-Title">12 09 2022</Card.Title>
+      <Card.Title className="CarouselCard-Title">12/09/2022</Card.Title>
       <Card.Img
         variant="top"
         src={image}

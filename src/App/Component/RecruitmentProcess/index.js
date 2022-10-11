@@ -1,19 +1,24 @@
 import HeadingSection from "../HeadingSection";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 import process1 from "../../../Asset/image/process1.png";
 import process2 from "../../../Asset/image/process2.png";
 import process3 from "../../../Asset/image/process3.png";
 import process4 from "../../../Asset/image/process4.png";
 import process5 from "../../../Asset/image/process5.png";
 import arrow from "../../../Asset/image/arrow.png";
-import vector from "../../../Asset/image/vector.png";
+// import vector from "../../../Asset/image/vector.png";
 
 import "./RecruitmentProcess.scss";
+const RecruitStyle = {
+  color: "#333",
+};
 function RecruitmentProcess() {
   return (
     <div className="SectionContainer">
-      <HeadingSection description={`Quy trình tuyển dụng`} />
+      <HeadingSection
+        description={`Quy trình tuyển dụng`}
+        style={RecruitStyle}
+      />
       <Container className="RecruitmentProcess-Container">
         <div className="Process-Containers">
           <div className="Process-Container">
@@ -35,12 +40,12 @@ function RecruitmentProcess() {
         <div className="Process-Containers">
           <div className="Process-Container">
             <img src={process4} alt="process" className="Process-Image" />
-            <p className="Process-Description">Lọc CV</p>
+            <p className="Process-Description">Phỏng vấn trực tiếp</p>
           </div>
           <img src={arrow} alt="arrow" className="Process-Arrow" />
           <div className="Process-Container">
             <img src={process5} alt="process" className="Process-Image" />
-            <p className="Process-Description">Phỏng vấn qua điện thoại</p>
+            <p className="Process-Description">Đi làm</p>
           </div>
         </div>
       </Container>

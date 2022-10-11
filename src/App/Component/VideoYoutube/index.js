@@ -4,7 +4,7 @@ import HeadingSection from "../HeadingSection";
 function VideoYoutube({ src }) {
   return (
     <div className="section2Container">
-      <HeadingSection description={`Hành trình phát triển`} />
+      {/* <HeadingSection description={`Hành trình phát triển`} /> */}
       <div>
         <iframe
           src={src}

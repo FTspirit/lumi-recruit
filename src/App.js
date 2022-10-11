@@ -32,7 +32,6 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
-        <Footer />
       </Router>
     </>
   );

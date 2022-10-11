@@ -26,7 +26,7 @@ import { Autoplay } from "swiper";
 function CarouselRoadmap() {
   return (
     <div className="CarouselRoadmapContainer">
-      <HeadingSection description={`Video giới thiệu về Lumi`} />
+      <HeadingSection description={`Hành trình phát triển`} />
       <Swiper
         // navigation={true}
         modules={[Autoplay]}
@@ -68,6 +68,27 @@ function CarouselRoadmap() {
         <SwiperSlide>
           <CarouselCard
             image={test1}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test2}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test2}
+            title="12-09-2002"
+            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            image={test2}
             title="12-09-2002"
             description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
           />
