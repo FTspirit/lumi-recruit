@@ -16,7 +16,7 @@ const RecruitCarouselImages = () => (
           <div className="section">
             <RecruitmentProcess />
           </div>
-          <div className="section images3">
+          <div className="section images4">
             <FAQAccordion />
           </div>
         </ReactFullpage.Wrapper>

@@ -11,16 +11,24 @@ function Footer() {
     <Container fluid className="Footer-Container">
       <div className="Footer-Container--Logo">
         <div className="logo">
-          <img src={facebooklogo} alt="facebook logo" />
+          <a href="https://www.facebook.com/lumijsc">
+            <img src={facebooklogo} alt="facebook logo" />
+          </a>
         </div>
         <div className="logo">
-          <img src={instagramlogo} alt="instagram logo" />
+          <a href="https://www.instagram.com/lumivietnam/">
+            <img src={instagramlogo} alt="instagram logo" />
+          </a>
         </div>
         <div className="logo">
-          <img src={youtubelogo} alt="youtube logo" />
+          <a href="https://www.youtube.com/LumiSmartHomeOfficial">
+            <img src={youtubelogo} alt="youtube logo" />
+          </a>
         </div>
         <div className="logo">
-          <img src={printerestlogo} alt="printerest logo" />
+          <a href="https://www.pinterest.com/lumivietnam/">
+            <img src={printerestlogo} alt="printerest logo" />
+          </a>
         </div>
       </div>
       <div className="Footer-Description">

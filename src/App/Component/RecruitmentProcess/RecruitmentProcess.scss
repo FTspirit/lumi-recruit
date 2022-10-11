@@ -1,13 +1,11 @@
-.SectionContainer {
-}
 .RecruitmentProcess-Container,
 .SectionContainer {
   display: flex;
   flex-direction: column;
 }
 .RecruitmentProcess-Container {
-  padding-top: 4rem;
-  gap: 10rem;
+  padding-top: 10rem;
+  gap: 15rem;
   position: relative;
 }
 .Process-Containers {
@@ -23,8 +21,8 @@
   align-items: center;
 }
 .Process-Image {
-  width: 9rem;
-  height: 10rem;
+  width: 12rem;
+  height: 13rem;
 }
 .Process-Description {
   font-size: 2.4rem;

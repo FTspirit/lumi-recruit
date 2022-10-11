@@ -23,7 +23,8 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  transition: transform 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  // transition: filter 0.7s ease-in-out;
 }
 .swiper-slide img {
   display: block;
@@ -33,9 +34,11 @@
 }
 .swiper-slide.swiper-slide-active {
   transform: scale(1.5) !important;
-  opacity: 1;
 }
-.swiper-pagination {
+.swiper-slide.swiper-slide-active .CarouselCard-Container {
+  filter: brightness(100%);
+}
+.swiper-slide.swiper-slide-active .swiper-pagination {
   display: flex !important;
   justify-content: space-around;
   top: 2rem;

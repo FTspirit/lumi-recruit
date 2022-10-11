@@ -1,14 +1,18 @@
 import Accordion from "react-bootstrap/Accordion";
 import Container from "react-bootstrap/Container";
+import HeadingSection from "../Component/HeadingSection";
+import Footer from "../Footer";
 import "./Accordion.scss";
+
 function FAQAccordion() {
   return (
     <>
-      <Container className="FAQAccordion-Container">
-        <Accordion defaultActiveKey="0">
+      <HeadingSection description={`Những câu hỏi thường gặp`} />
+      <Container className="FAQAccordion-Section-Container">
+        <Accordion defaultActiveKey="0" className="FAQAccordion-Container">
           <Accordion.Item eventKey="0" className="FAQAccordion-item">
             <Accordion.Header className="FAQAccordion-heading">
-              Accordion Item #1
+              Một số câu hỏi thường gặp
             </Accordion.Header>
             <Accordion.Body className="FAQAccordion-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -22,7 +26,7 @@ function FAQAccordion() {
           </Accordion.Item>
           <Accordion.Item eventKey="1" className="FAQAccordion-item">
             <Accordion.Header className="FAQAccordion-heading">
-              Accordion Item #2
+              Một số câu hỏi thường gặp
             </Accordion.Header>
             <Accordion.Body className="FAQAccordion-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -36,7 +40,7 @@ function FAQAccordion() {
           </Accordion.Item>
           <Accordion.Item eventKey="2" className="FAQAccordion-item">
             <Accordion.Header className="FAQAccordion-heading">
-              Accordion Item #2
+              Một số câu hỏi thường gặp
             </Accordion.Header>
             <Accordion.Body className="FAQAccordion-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -50,7 +54,7 @@ function FAQAccordion() {
           </Accordion.Item>
           <Accordion.Item eventKey="3" className="FAQAccordion-item">
             <Accordion.Header className="FAQAccordion-heading">
-              Accordion Item #2
+              Một số câu hỏi thường gặp
             </Accordion.Header>
             <Accordion.Body className="FAQAccordion-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -64,6 +68,7 @@ function FAQAccordion() {
           </Accordion.Item>
         </Accordion>
       </Container>
+      <Footer />
     </>
   );
 }
