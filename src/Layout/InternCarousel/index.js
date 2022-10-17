@@ -9,6 +9,7 @@ import "./InternCarousel.scss";
 import Footer from "../../App/Footer";
 import TrainingProcess from "../../App/Component/TrainingProcess";
 import Tricks from "../../App/Tricks";
+import TypicalFaceCards from "../../App/TypicalFaceCards";
 
 const InternCarousel = () => (
   <ReactFullpage
@@ -25,6 +26,7 @@ const InternCarousel = () => (
             <Tricks />
           </div>
           <div className="section imagesInternCarousel3">
+            <TypicalFaceCards />
             <Footer />
           </div>
         </ReactFullpage.Wrapper>

@@ -42,15 +42,3 @@
   transition: all 0.7s ease-in-out;
   // transition: filter 0.7s ease-in-out;
 }
-.swiper-slide.swiper-slide-active .swiper-pagination {
-  display: flex !important;
-  justify-content: space-around;
-  top: 2rem;
-  bottom: 100vh !important;
-}
-.swiper-pagination-bullet {
-  display: block;
-  border-radius: 0 !important;
-  width: 100%;
-  height: 0.2rem;
-}
