@@ -83,7 +83,16 @@ body {
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
 }
-
+.button:focus {
+  outline: none !important;
+  outline-offset: none !important;
+}
 /**************************/
 /* GENRAL REUSABLE COMPONENTS */
 /**************************/
+p {
+  margin-bottom: 0rem !important;
+}
+.pdt-32 {
+  padding-top: 3.2rem;
+}

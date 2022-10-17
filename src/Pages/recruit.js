@@ -1,8 +1,8 @@
-import RecruitCarouselImages from "../App/RecruitCarousel";
+import RecruitCarousel from "../Layout/RecruitCarousel";
 function Recruit() {
   return (
     <>
-      <RecruitCarouselImages />
+      <RecruitCarousel />
     </>
   );
 }

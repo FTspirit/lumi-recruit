@@ -1,11 +1,11 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
-import "./Carousel.scss";
-import VideoYoutube from "../Component/VideoYoutube";
-import CarouselRoadmap from "../CarouselRoadmap";
-import Footer from "../Footer";
+import "./HomeCarousel.scss";
+import VideoYoutube from "../../App/Component/VideoYoutube";
+import CarouselRoadmap from "../../App/Roadmap";
+import Footer from "../../App/Footer";
 
-const CarouselImages = () => (
+const HomeCarousel = () => (
   <ReactFullpage
     //fullpage options
     scrollingSpeed={1000} /* Options here */
@@ -26,4 +26,4 @@ const CarouselImages = () => (
     }}
   />
 );
-export default CarouselImages;
+export default HomeCarousel;

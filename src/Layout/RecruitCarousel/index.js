@@ -1,10 +1,10 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import "./RecruitCarousel.scss";
-import RecruitmentProcess from "../Component/RecruitmentProcess";
-import FAQAccordion from "../Accordion";
+import RecruitmentProcess from "../../App/Component/RecruitmentProcess";
+import FAQAccordion from "../../App/Accordion";
 
-const RecruitCarouselImages = () => (
+const RecruitCarousel = () => (
   <ReactFullpage
     //fullpage options
     scrollingSpeed={1000} /* Options here */
@@ -24,4 +24,4 @@ const RecruitCarouselImages = () => (
     }}
   />
 );
-export default RecruitCarouselImages;
+export default RecruitCarousel;

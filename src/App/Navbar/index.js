@@ -1,10 +1,11 @@
 import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import LogoLumi from "../../Asset/image/logoLumi.png";
 import "./Navbar.scss";
+
 function Navigation() {
   return (
     <Navbar
@@ -16,9 +17,15 @@ function Navigation() {
     >
       <Container fluid className="navbarContainter">
         <Navbar.Brand className="navbarLogo">
-          <Link to="/" className="navbar__brand">
+          <NavLink
+            as={Link}
+            to="/"
+            className="navbar__brand"
+            key="Home"
+            eventKey="Home"
+          >
             <img src={LogoLumi} alt="logo" className="lumiLogo" />
-          </Link>
+          </NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Offcanvas
@@ -29,42 +36,42 @@ function Navigation() {
           <Offcanvas.Header />
           <Offcanvas.Body>
             <Nav className="justify-content-center">
-              <Nav.Link
+              <NavLink
                 as={Link}
                 to="/tuyendung"
-                className="navbar__link"
+                className={`navbar__link`}
                 key="Recruit"
                 eventKey="Recruit"
               >
                 Tuyển dụng
-              </Nav.Link>
-              <Nav.Link
+              </NavLink>
+              <NavLink
                 as={Link}
                 to="/thuctapsinh"
-                className="navbar__link"
+                className={`navbar__link`}
                 key="Intern"
                 eventKey="Intern"
               >
                 Thực tập sinh
-              </Nav.Link>
-              <Nav.Link
+              </NavLink>
+              <NavLink
                 as={Link}
                 to="/doisong"
-                className="navbar__link"
+                className={`navbar__link`}
                 key="LumiLife"
                 eventKey="LumiLife"
               >
                 Đời sống LUMIER
-              </Nav.Link>
-              <Nav.Link
+              </NavLink>
+              <NavLink
                 as={Link}
                 to="/blog"
-                className="navbar__link"
+                className={`navbar__link`}
                 key="Blog"
                 eventKey="Blog"
               >
                 Blog
-              </Nav.Link>
+              </NavLink>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

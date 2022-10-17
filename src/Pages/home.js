@@ -1,8 +1,8 @@
-import CarouselImages from "../App/Carousel";
+import HomeCarousel from "../Layout/HomeCarousel";
 function Home() {
   return (
     <>
-      <CarouselImages />
+      <HomeCarousel />
     </>
   );
 }

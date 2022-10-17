@@ -9,7 +9,7 @@ import arrow from "../../../Asset/image/arrow.png";
 // import vector from "../../../Asset/image/vector.png";
 
 import "./RecruitmentProcess.scss";
-const RecruitStyle = {
+const RecruitHeadingStyle = {
   color: "#333",
 };
 function RecruitmentProcess() {
@@ -17,7 +17,7 @@ function RecruitmentProcess() {
     <div className="SectionContainer">
       <HeadingSection
         description={`Quy trình tuyển dụng`}
-        style={RecruitStyle}
+        style={RecruitHeadingStyle}
       />
       <Container className="RecruitmentProcess-Container">
         <div className="Process-Containers">
@@ -39,14 +39,15 @@ function RecruitmentProcess() {
         {/* <img src={vector} alt="vector" className="vector" /> */}
         <div className="Process-Containers">
           <div className="Process-Container">
-            <img src={process4} alt="process" className="Process-Image" />
-            <p className="Process-Description">Phỏng vấn trực tiếp</p>
-          </div>
-          <img src={arrow} alt="arrow" className="Process-Arrow" />
-          <div className="Process-Container">
             <img src={process5} alt="process" className="Process-Image" />
             <p className="Process-Description">Đi làm</p>
           </div>
+          <img src={arrow} alt="arrow" className="Process-Arrow rotate" />
+          <div className="Process-Container">
+            <img src={process4} alt="process" className="Process-Image" />
+            <p className="Process-Description">Phỏng vấn trực tiếp</p>
+          </div>
+          <img src={arrow} alt="arrow" className="Process-Arrow rotate" />
         </div>
       </Container>
     </div>

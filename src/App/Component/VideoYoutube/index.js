@@ -1,6 +1,4 @@
 import "./VideoYoutube.scss";
-import HeadingSection from "../HeadingSection";
-// import test1 from "../../../Asset/video/test1.mp4";
 function VideoYoutube({ src }) {
   return (
     <div className="section2Container">
@@ -13,6 +11,7 @@ function VideoYoutube({ src }) {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           className="CarouselImagesVideo"
+          scrolling="yes"
         ></iframe>
       </div>
       {/* <video
