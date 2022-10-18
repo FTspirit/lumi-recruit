@@ -28,13 +28,13 @@ function TypicalFaceCards() {
           description={`Những gương mặt tiêu biểu`}
           style={TypicalFaceStyle}
         />
-        <Container>
+        <Container className="TypicalFaceCards-Container">
           <Swiper
             // navigation={true}
             modules={[Autoplay, Pagination]}
             loop={true}
             pagination={{ clickable: true }}
-            // autoplay={{ delay: 2000 }}
+            autoplay={{ delay: 2000 }}
             speed={1500}
             pauseOnMouseEnter={false}
             touchReleaseOnEdges={true}

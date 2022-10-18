@@ -4,6 +4,10 @@
     gap: 5rem;
     justify-content: center;
     align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
   }
   &-Image {
     border-radius: 50% !important;
@@ -34,5 +38,12 @@
     padding: 2rem;
     background-color: #fff;
     border-radius: 2.5rem;
+  }
+}
+.TypicalFaceCards-Container {
+  .swiper {
+    .swiper-pagination {
+      --swiper-theme-color: #fff;
+    }
   }
 }

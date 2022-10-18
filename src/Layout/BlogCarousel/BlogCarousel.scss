@@ -1,0 +1,55 @@
+h3 {
+  font-size: 5em;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+#section1 {
+  color: #fff;
+}
+.section {
+  height: 100vh !important;
+}
+.images9 {
+  background-image: url(../../Asset/image/cover8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(224, 220, 220, 0.101),
+      rgba(0, 0, 0, 0.322)
+    );
+    height: 50rem;
+  }
+}
+.images10 {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+.images11 {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.fp-section {
+  text-align: center;
+}
+.fp-watermark {
+  display: none !important;
+}
+.fp-watermark > a {
+  display: none !important;
+}
