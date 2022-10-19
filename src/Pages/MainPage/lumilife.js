@@ -1,4 +1,4 @@
-import LUMIERCarousel from "../Layout/LUMIERCarousel";
+import LUMIERCarousel from "../../Layout/LUMIERCarousel";
 function LumiLife() {
   return (
     <>

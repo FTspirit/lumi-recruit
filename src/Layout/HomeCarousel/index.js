@@ -2,7 +2,7 @@ import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import "./HomeCarousel.scss";
 import VideoYoutube from "../../App/Component/VideoYoutube";
-import CarouselRoadmap from "../../App/Roadmap";
+import CarouselRoadmap from "../../App/CardList/Roadmap";
 import Footer from "../../App/Footer";
 
 const HomeCarousel = () => (

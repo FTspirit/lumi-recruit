@@ -3,13 +3,13 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Images
-import test from "../../Asset/image/carouselmockup.png";
-import test1 from "../../Asset/image/carouselmockup1.png";
-import test2 from "../../Asset/image/carouselmockup2.png";
+import test from "../../../Asset/image/carouselmockup.png";
+import test1 from "../../../Asset/image/carouselmockup1.png";
+import test2 from "../../../Asset/image/carouselmockup2.png";
 
 // Import CarouselCard
-import CarouselCard from "../Component/CarouselCard";
-import HeadingSection from "../Component/HeadingSection";
+import CarouselCard from "../../Card/CarouselCard";
+import HeadingSection from "../../Component/HeadingSection";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -32,7 +32,7 @@ function CarouselRoadmap() {
         modules={[Autoplay]}
         loop={true}
         // pagination={pagination}
-        autoplay={{ delay: 2000 }}
+        // autoplay={{ delay: 2000 }}
         speed={1500}
         pauseOnMouseEnter={false}
         touchReleaseOnEdges={true}

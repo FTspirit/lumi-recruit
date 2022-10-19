@@ -11,7 +11,7 @@ h3 {
   height: 100vh !important;
 }
 .images9 {
-  background-image: url(../../Asset/image/cover8.png);
+  background-image: url(../../Asset/image/blogcover1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -24,10 +24,10 @@ h3 {
     right: 0;
     background-image: linear-gradient(
       to bottom,
-      rgba(224, 220, 220, 0.101),
-      rgba(0, 0, 0, 0.322)
+      rgba(224, 220, 220, 0),
+      rgb(0, 0, 0)
     );
-    height: 50rem;
+    height: 100rem;
   }
 }
 .images10 {
@@ -52,4 +52,33 @@ h3 {
 }
 .fp-watermark > a {
   display: none !important;
+}
+.Blog {
+  &-container {
+    position: fixed;
+    z-index: 100;
+    transform: translateX(-50%);
+    text-align: center;
+    left: 50%;
+    cursor: pointer;
+  }
+  &-Heading {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: #fff;
+    z-index: 100 !important;
+  }
+  &-Button {
+    padding-top: 10rem;
+    display: inline-block;
+  }
+  &-Button p {
+    padding: 1.8rem 8.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    background-color: #fff;
+    border-radius: 1rem;
+  }
 }

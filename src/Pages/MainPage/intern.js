@@ -1,4 +1,4 @@
-import InternCarousel from "../Layout/InternCarousel";
+import InternCarousel from "../../Layout/InternCarousel";
 function Intern() {
   return (
     <>

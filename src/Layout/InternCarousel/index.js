@@ -8,8 +8,8 @@ import "./InternCarousel.scss";
 // Import Component
 import Footer from "../../App/Footer";
 import TrainingProcess from "../../App/Component/TrainingProcess";
-import Tricks from "../../App/Tricks";
-import TypicalFaceCards from "../../App/TypicalFaceCards";
+import Tricks from "../../App/CardList/Tricks";
+import TypicalFaceCards from "../../App/CardList/TypicalFaceCards";
 
 const InternCarousel = () => (
   <ReactFullpage

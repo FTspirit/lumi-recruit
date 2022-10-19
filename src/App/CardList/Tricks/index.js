@@ -4,8 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Component
 import Container from "react-bootstrap/Container";
-import HeadingSection from "../Component/HeadingSection";
-import TypicalFaceCard from "../Component/TypicalFaceCard";
+import HeadingSection from "../../Component/HeadingSection";
+import TrickCard from "../../Card/TrickCard";
+import { BsChevronDoubleRight } from "react-icons/bs";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -15,25 +17,21 @@ import "swiper/css/pagination";
 import { Autoplay } from "swiper";
 
 // Import SCSS
-import "./TypicalFaceCards.scss";
-import { Pagination } from "swiper";
-function TypicalFaceCards() {
-  const TypicalFaceStyle = {
-    color: "#fff",
+import "./Tricks.scss";
+function Tricks() {
+  const TrickHeadingStyle = {
+    color: "#1f1f1f",
   };
   return (
     <>
       <div>
-        <HeadingSection
-          description={`Những gương mặt tiêu biểu`}
-          style={TypicalFaceStyle}
-        />
-        <Container className="TypicalFaceCards-Container">
+        <HeadingSection description={`Mẹo hay`} style={TrickHeadingStyle} />
+        <Container>
           <Swiper
             // navigation={true}
-            modules={[Autoplay, Pagination]}
+            modules={[Autoplay]}
             loop={true}
-            pagination={{ clickable: true }}
+            // pagination={pagination}
             autoplay={{ delay: 2000 }}
             speed={1500}
             pauseOnMouseEnter={false}
@@ -42,33 +40,38 @@ function TypicalFaceCards() {
             // disableOnInteraction
             // freeMode={{ enabled: true, sticky: true }}
             className="myTricksSwiper"
-            slidesPerView={1}
+            slidesPerView={3}
             centeredSlides={true}
             spaceBetween={50}
           >
             <SwiperSlide>
-              <TypicalFaceCard />
+              <TrickCard />
             </SwiperSlide>
             <SwiperSlide>
-              <TypicalFaceCard />
+              <TrickCard />
             </SwiperSlide>
             <SwiperSlide>
-              <TypicalFaceCard />
+              <TrickCard />
             </SwiperSlide>
             <SwiperSlide>
-              <TypicalFaceCard />
+              <TrickCard />
             </SwiperSlide>
             <SwiperSlide>
-              <TypicalFaceCard />
+              <TrickCard />
             </SwiperSlide>
             <SwiperSlide>
-              <TypicalFaceCard />
+              <TrickCard />
             </SwiperSlide>
           </Swiper>
+          <div className="Tricks-Link-Container">
+            <a href="https://www.w3schools.com" className="Tricks-Link">
+              Xem thêm <BsChevronDoubleRight />
+            </a>
+          </div>
         </Container>
       </div>
     </>
   );
 }
 
-export default TypicalFaceCards;
+export default Tricks;

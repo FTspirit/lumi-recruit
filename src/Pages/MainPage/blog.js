@@ -1,4 +1,4 @@
-import BlogCarousel from "../Layout/BlogCarousel";
+import BlogCarousel from "../../Layout/BlogCarousel";
 function Blog() {
   return (
     <>

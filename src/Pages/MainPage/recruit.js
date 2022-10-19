@@ -1,4 +1,4 @@
-import RecruitCarousel from "../Layout/RecruitCarousel";
+import RecruitCarousel from "../../Layout/RecruitCarousel";
 function Recruit() {
   return (
     <>
